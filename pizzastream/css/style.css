@@ -187,7 +187,8 @@ progress {
           appearance: none;
   width: 100%;
   height: 50px;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  background: url(../img/loading.gif) repeat-x top center/cover transparent; }
 
 progress[value] {
   background: url(../img/loading.gif) repeat-x top center/cover transparent; }
