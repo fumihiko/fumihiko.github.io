@@ -1,0 +1,116 @@
+* {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+$ss : 'Source Sans Pro', sans-serif;
+$pd : 'Playfair Display', serif;
+$ks : 'Kosugi', sans-serif;
+
+body {
+	font-family: $ss;
+	font-weight: 400;
+	-webkit-text-size-adjust: none;
+	color: #303030;
+}
+
+p {
+    font-family: $ks;
+    line-height: 1.75;
+    margin: 24px 16px;
+    text-align: center;
+}
+
+h1 {
+    font-family: $pd;
+    text-align: center;
+    font-size: 3rem;
+    line-height: 2;
+}
+
+h2 {
+    font-family: $pd;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2;
+    margin: 32px 0;  
+}
+
+
+
+#brand {
+    font-family: $pd;
+    text-align: center;
+    font-size: 36px;
+    line-height: 48px;
+    margin: 24px 0;
+}
+
+#home {
+    position: relative;
+    img {
+        text-align: center;
+        font-size: 5rem;
+        line-height: 10;
+        display: block;
+       
+    }
+    article {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    &::after {
+        content: '';
+        
+    }
+}
+
+nav {
+    background-color: #000000;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    position: sticky;
+    top: 0;
+    opacity: 0.95;
+    z-index: 3;
+    ul {
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        align-content: center;
+        font-family: $pd;
+        li {
+            text-align: center;
+            flex: 1;
+            a {
+                width: 100%;
+                display: block;
+                color: #ffffff;
+                text-decoration: none;
+                font-size: 18px;
+                line-height: 54px;
+                letter-spacing: 2px;
+                transition: all ease-in-out .2s;
+                &:hover {
+                    color: #000000;
+                    background-color: #ffffff;
+                }
+            }
+        }
+    }
+}
+
+main {
+    
+    width: 100%;
+    margin: 0 auto;
+}
